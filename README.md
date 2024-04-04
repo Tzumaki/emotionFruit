@@ -1,3 +1,7 @@
+# PROGETTO INFORMATICA UMANISTICA
+
+Email del professore:
+
 FRED (il testo va prima tradotto in inglese): produce automaticamente un knowledge graph a partire da un testo in inglese. Per annotare le emozioni occorre poi fare una query a Framester.
 Esempio:
 

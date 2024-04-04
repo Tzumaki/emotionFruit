@@ -8,11 +8,11 @@ Esempio:
 
 
 
-  SELECT DISTINCT ?frame ?synset ?gloss ?domain ?proxhyponym ?tophyponym ?d0 ?posscore ?negscore ?amusedscore ?angryscore ?annoyedscore ?dontcarescore ?happyscore ?inspiredscore ?sadscore ?agenttrope ?undergoertrope ?  simil ?othersense
+    SELECT DISTINCT ?frame ?synset ?gloss ?domain ?proxhyponym ?tophyponym ?d0 ?posscore ?negscore ?amusedscore ?angryscore ?annoyedscore ?dontcarescore ?happyscore ?inspiredscore ?sadscore ?agenttrope ?undergoertrope ?  simil ?othersense
 
   WHERE {
 
-  ?frame rdf:type <https://w3id.org/framester/schema/ConceptualFrame> , owl:Class ;
+    ?frame rdf:type <https://w3id.org/framester/schema/ConceptualFrame> , owl:Class ;
 
     rdfs:subClassOf <https://w3id.org/framester/schema/FrameOccurrence> ;
   

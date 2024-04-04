@@ -19,7 +19,7 @@ song = getSong(sys.argv[1],sys.argv[2])
 
 for indice,strofa in enumerate(parseText(song.lyrics)):
     if(strofa.replace("\n"," ").replace(",","")): 
-        dict['corpus_id'].append(song.title)
+        dict['corpus_id'].append(song.title.replace(" ","_"))
         dict['document_id'].append(1)
         dict['sentence_id'].append(indice)
         dict['content'].append(strofa.replace("\n"," ").replace(",",""))

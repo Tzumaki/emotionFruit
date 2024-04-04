@@ -8,55 +8,55 @@ Esempio:
 
 
 
-SELECT DISTINCT ?frame ?synset ?gloss ?domain ?proxhyponym ?tophyponym ?d0 ?posscore ?negscore ?amusedscore ?angryscore ?annoyedscore ?dontcarescore ?happyscore ?inspiredscore ?sadscore ?agenttrope ?undergoertrope ?simil ?othersense
+  SELECT DISTINCT ?frame ?synset ?gloss ?domain ?proxhyponym ?tophyponym ?d0 ?posscore ?negscore ?amusedscore ?angryscore ?annoyedscore ?dontcarescore ?happyscore ?inspiredscore ?sadscore ?agenttrope ?undergoertrope ?  simil ?othersense
 
-WHERE {
+  WHERE {
 
-?frame rdf:type <https://w3id.org/framester/schema/ConceptualFrame> , owl:Class ;
+  ?frame rdf:type <https://w3id.org/framester/schema/ConceptualFrame> , owl:Class ;
 
-  rdfs:subClassOf <https://w3id.org/framester/schema/FrameOccurrence> ;
+    rdfs:subClassOf <https://w3id.org/framester/schema/FrameOccurrence> ;
+  
+    owl:sameAs ?fnframe .
+  
+    OPTIONAL {?fnframe skos:closeMatch ?synset}
 
-  owl:sameAs ?fnframe .
-
-  OPTIONAL {?fnframe skos:closeMatch ?synset}
-
-  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/gloss> ?gloss}
-
-  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/wndomains/synsetDomain> ?domain}
-
-  OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#proxhyp> ?proxhyponym}
-
-  OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#hyp> ?tophyponym}
-
-  OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#d0> ?d0}
-
-  OPTIONAL {?synset <https://w3id.org/framester/sentiwordnet/posScore> ?posscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/sentiwordnet/negScore> ?negscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/AMUSEDscore> ?amusedscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/ANGRYscore> ?angryscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/ANNOYEDscore> ?annoyedscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/DONT_CAREscore> ?dontcarescore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/HAPPYscore> ?happyscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/INSPIREDscore> ?inspiredscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/SADscore> ?sadscore}
-
-  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/verbnounsynsettropes/agent> ?agenttrope}
-
-  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/verbnounsynsettropes/undergoer> ?undergoertrope}
-
-  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/derivationallyBasedSynsetSimilarity> ?simil}
-
-  OPTIONAL {?synset owl:sameAs ?othersense}
-
-  FILTER (?synset = wn30instances:synset-universe-noun-1)
+    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/gloss> ?gloss}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/wndomains/synsetDomain> ?domain}
+  
+    OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#proxhyp> ?proxhyponym}
+  
+    OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#hyp> ?tophyponym}
+  
+    OPTIONAL {?synset <http://www.ontologydesignpatterns.org/ont/own3/own2dul.owl#d0> ?d0}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/sentiwordnet/posScore> ?posscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/sentiwordnet/negScore> ?negscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/AMUSEDscore> ?amusedscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/ANGRYscore> ?angryscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/ANNOYEDscore> ?annoyedscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/DONT_CAREscore> ?dontcarescore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/HAPPYscore> ?happyscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/INSPIREDscore> ?inspiredscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/depechemood/depechemood2wn/SADscore> ?sadscore}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/verbnounsynsettropes/agent> ?agenttrope}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/verbnounsynsettropes/undergoer> ?undergoertrope}
+  
+    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/derivationallyBasedSynsetSimilarity> ?simil}
+  
+    OPTIONAL {?synset owl:sameAs ?othersense}
+  
+    FILTER (?synset = wn30instances:synset-universe-noun-1)
 
       } limit 100
 

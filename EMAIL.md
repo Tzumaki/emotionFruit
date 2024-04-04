@@ -52,11 +52,11 @@ WHERE {
 
   OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/verbnounsynsettropes/undergoer> ?undergoertrope}
 
-    OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/derivationallyBasedSynsetSimilarity> ?simil}
+  OPTIONAL {?synset <https://w3id.org/framester/wn/wn30/schema/derivationallyBasedSynsetSimilarity> ?simil}
 
   OPTIONAL {?synset owl:sameAs ?othersense}
 
-     FILTER (?synset = wn30instances:synset-universe-noun-1)
+  FILTER (?synset = wn30instances:synset-universe-noun-1)
 
       } limit 100
 

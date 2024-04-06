@@ -1,5 +1,19 @@
 # PROGETTO INFORMATICA UMANISTICA
 
+
+### Testing
+
+Per testare lo script che ti restituisce il grafo rdf 
+
+```
+sh rdf.sh "Nome autore" "Nome canzone"
+```
+
+L'output sarà nel file out.nq
+
+
+### Email professore
+
 Email del professore:
 
 FRED (il testo va prima tradotto in inglese): produce automaticamente un knowledge graph a partire da un testo in inglese. Per annotare le emozioni occorre poi fare una query a Framester.

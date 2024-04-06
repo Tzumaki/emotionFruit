@@ -5,14 +5,13 @@ import re
 
 
 def parseText(Lyrics):
-    regex1 = re.compile("\[(.*?)\]", flags=re.VERBOSE)
-    regex2 = re.compile("\d+\s*.*Lyrics?",flags= re.VERBOSE)
-    regex3 = re.compile("\d+\s*.*Embed?",flags=re.VERBOSE)
+    regex1 = re.compile("\[(.*?)\]", flags=re.VERBOSE) #Elimina tutte le parti tra parentesi
+    regex2 = re.compile("\d+\s*.*Lyrics?",flags= re.VERBOSE) #Elimina la prima parte non utileche restituisce genius API
+    regex3 = re.compile("\d+\s*.*Embed?",flags=re.VERBOSE) #Elimina l'ultima riga non utile che restituisce genius API
     parsedLyrics = regex1.sub("",Lyrics)
     parsedLyrics = regex2.sub("",parsedLyrics);
     parsedLyrics = regex3.sub("",parsedLyrics);
     return parsedLyrics.split("\n\n")
-
 
 dict = {'corpus_id':[],'document_id':[],'sentence_id':[],'content':[]}
 song = getSong(sys.argv[1],sys.argv[2])

@@ -1,5 +1,10 @@
 # PROGETTO INFORMATICA UMANISTICA
 
+## Da nq ad array di stringhe
+```
+python3 synScraper.py ../out.nq
+```
+Da runnare nella cartella code e dopo aver eseguito lo script di Popi
 
 ### Testing
 

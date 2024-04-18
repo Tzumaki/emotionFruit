@@ -6,3 +6,11 @@ code/out.csv
 
 #Tool del prof
 machine-reading/
+bin
+include
+lib
+lib64
+pyvenv.cfg
+machine-reading/build
+machine-reading/machine_reading/__pycache__
+machine-reading

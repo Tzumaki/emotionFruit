@@ -1,0 +1,15 @@
+
+{
+	"song" : [
+		{
+			"synset" : ["nere"],
+			"text" : ["di sere neeeereeeeeee"],
+		    "id" : 0	
+		},
+		{
+			"altro oggetto":"altre cose"
+		}
+	],
+	"author": "Tiziano Ferro",
+	"title": "Sere Nere"
+}

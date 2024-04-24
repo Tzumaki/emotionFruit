@@ -1,7 +1,11 @@
-BASARSI SU QUESTO JSON
+{
+    "song": [{
+        "synset" : ["asdf","asdf","asdf","asdf","asdf","asdf","asdf","asfde"],
+        "text" : "...di sere nere...",
+        "id" : 2
+    }],
+    "title" : "Sere Nere",
+    "author" : "Tiziano Ferro"
+}
 
-"synset" : ["asdf","asdf","asdf","asdf","asdf","asdf","asdf","asfde"]
-"text" : "...di sere nere..."
-"id" : 	  2
-"titolo" : "Sere Nere"
-"Autore" : "Tiziano Ferro"
+

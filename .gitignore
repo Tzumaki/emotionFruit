@@ -3,6 +3,7 @@ out.nq
 
 code/__pycache__
 code/out.csv
+code/synsetOut.json
 
 #Tool del prof
 machine-reading/

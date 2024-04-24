@@ -4,33 +4,39 @@ import json
 
 def regexSubject(todoRegex: list):
     regExp = ""
-    filredWords = []
-    for subject in todoRegex:
-        regExp = re.findall(r'/([^/<>]+)>', subject)
-        filredWords.append(regExp)
-    return filredWords   
+    filteredWords = []
 
-def filterSynSet(synsetLines: list):
-    outputWords = []
-    todoRegex = []
+    for subject in todoRegex:
+        regExp = re.findall(r'(\d+)_amr', subject)
+        filteredWords.append(regExp)
+    
+    return filteredWords   
+
+def filterSynset(synsetLines: list):
+    outputWords = [] # numVerse
+    todoRegex = [] # subjWithNumVerse
+    synsetDis = [] # objWithSynset
     countSynSubj = 0
-    synsetDis = []
     
     for synLine in synsetLines:
-        singleTag = synLine.split(" ") #divido la quadupla nei 4 elementi
+        singleTag = synLine.split(" ") # divide the quaduple in the 4 elements
            
-        if "synset" in singleTag[2]: #se l'oggetto della quadrupla ha synSet
-            todoRegex.append(singleTag[0]) #aggiungo il soggetto alla lista su cui farema la regex
+        if "synset" in singleTag[2]: # if the object of the quadruple has a synSet
+            todoRegex.append(singleTag[0]) # add the subject to the list where we'll do the regex
+
+            # to extrapolate the synset of the object
             s = str(singleTag[2]).split("/")
             sysToappend = s[len(s)-1]
-            synsetDis.append(sysToappend[:len(sysToappend)-1])
+            synsetDis.append(sysToappend[:len(sysToappend)-1]) # append most recent sys
+
             countSynSubj += 1
 
     if(countSynSubj > 0):
         print(f"synset oggetto totali: {countSynSubj}")
-        print(todoRegex)
-        print(synsetDis)
+        # print(todoRegex)
+        # print(synsetDis)
         outputWords = regexSubject(todoRegex)
+
         return outputWords,synsetDis
     else:
         print("Non ci sono synset oggetto :(")
@@ -45,9 +51,14 @@ if __name__ == "__main__":
     nqFile = open(sys.argv[1], "r")
 
     quadruple = nqFile.readlines()
+
     countSynWord = 0
     synsetLines = []
-    words = []
+
+    # output of filter
+    numVerse_synsets = []
+    verses = []
+    synsets = []
 
     for line in quadruple: 
         if "synset" in line:
@@ -59,19 +70,48 @@ if __name__ == "__main__":
     else:
         exit("Non ci sono synset :(")
 
-    words = filterSynSet(synsetLines)   #lista di liste di parole associate al synSet
-    synsets = words[1]
-    words = words[0]
-
-    finalList = [element for sublist in words for element in sublist]
-    print(finalList) #liste di parole associate al synSet
+    numVerse_synsets = filterSynset(synsetLines)   # list of: list of verses AND list of synsets
+    print(f"BOTH{numVerse_synsets}")
+    verses = numVerse_synsets[0]
+    print(verses)
+    synsets = numVerse_synsets[1]
+    print(synsets)
         
-    # crea il file json
+    # create json file
+    '''
     data = {}
-    for i, name in enumerate(finalList):
+    for i, name in enumerate(numVerse_synsets):
         data[name] = synsets[i]
     json_data = json.dumps(data)
     with open("synsetOut.json", "w") as f:
         f.write(json_data)
+    '''
+
+    song_dict = {}
+
+    for id_, synset in zip(verses, synsets): # iterate over the lists
+        id_val = int(id_[0]) # convert id to integer
+        
+        if id_val in song_dict:
+            song_dict[id_val]["synset"].append(synset)
+        else: # create a new entry
+            song_dict[id_val] = {
+                "synset": [synset],
+                "id": id_val
+            }
+
+    sorted_songs = sorted(song_dict.values(), key=lambda x: x["id"]) # sort the verses by id
+ 
+    final_object = {"song": sorted_songs}
+
+    filename = "synScraperOutput.json"
+
+    # save the final object to a separate JSON file
+    with open(filename, 'w') as json_file:
+        json.dump(final_object, json_file, indent=2)
+
+    print(f"JSON object saved to {filename}")
+
+    
 
     nqFile.close()

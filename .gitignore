@@ -15,3 +15,6 @@ pyvenv.cfg
 machine-reading/build
 machine-reading/machine_reading/__pycache__
 machine-reading
+
+/*.swp
+*.swp

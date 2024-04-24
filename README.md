@@ -1,5 +1,21 @@
 # PROGETTO INFORMATICA UMANISTICA
-
+## Output desiderato
+```
+{
+  "song" : [
+    {
+      "synset" : ["synset1", "synset2"]],
+      "text" : "testo",
+      "id": numStrofa
+    },
+    {
+      altro oggetto strofa
+    }
+  ]
+  "author" : "Ariana Grande"
+  "title" : "One Last Time"
+}
+```
 ## Da nq ad array di stringhe
 ```
 python3 synScraper.py ../out.nq

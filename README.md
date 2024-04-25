@@ -1,4 +1,12 @@
 # PROGETTO INFORMATICA UMANISTICA
+
+## Query SPARQL
+In /code runnare:
+```
+python3 sparql_query.py
+```
+nota: serve un file synScraperOutput.json popolato
+
 ## Output desiderato
 ```
 {

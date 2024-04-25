@@ -4,7 +4,7 @@ output.txt
 
 code/__pycache__
 code/out.csv
-code/synsetOut.json
+code/synScraperOutput.json
 
 #Tool del prof
 machine-reading/

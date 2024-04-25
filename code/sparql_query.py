@@ -4,25 +4,10 @@ In order to run this code you need to install the next libraries:
 """
 from SPARQLWrapper import SPARQLWrapper, JSON
 from string import Template #using for string interpolation
+import json 
 
-
+#Expected synScraperOutput.json
 """
-# Python program to read json file
-import json
-f = open('synsetOut.json')
-data = json.load(f)
-#Workaround
-synsetTupleList = list(data.items())
-synsetList = []
-for index in range(len(synsetTupleList)):
-    key, synset = synsetTupleList[index]
-    synsetList.append(synset)
-# Closing file
-f.close()
-"""
-
-
-#Expected synsetOut.json
 data = {"song": [
             {"synset": ["synset-again-adverb-1", "synset-alone-adjectivesatellite-3", "synset-entirely-adverb-2", "synset-friend-noun-1", "synset-intoxicated-adjective-1", "synset-layer-noun-1", "synset-phone-noun-2", "synset-thinker-noun-1", "synset-time-noun-1", "synset-besides-adverb-2", "synset-many-adjective-1", "synset-back-adverb-1", "synset-nowadays-adverb-1", "synset-back-adverb-2", "synset-convention-noun-2", "synset-still-adverb-1", "synset-baby-noun-5"], 
              "text": "Lorem ipsum dolor sit amet", 
@@ -31,8 +16,15 @@ data = {"song": [
          "author": "Dua Lipa",
          "title": "New Rules"
 }
-#filters = data["song"]["synset"]
-finalResults = {"title": data["title"], "author": data["author"], "scores": []}
+"""
+
+f = open('synScraperOutput.json')
+data = json.load(f)
+f.close()
+
+
+finalResults = {#"title": data["title"], "author": data["author"], 
+                "scores": []}
 
 for verse in range(len(data["song"])):
 
@@ -44,7 +36,8 @@ for verse in range(len(data["song"])):
     sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
 
     #init
-    score = {"text": data["song"][verse]["text"], "id": data["song"][verse]["id"], 
+    score = {#"text": data["song"][verse]["text"], 
+             "id": data["song"][verse]["id"], 
              "angryscore": 0, "amusedscore": 0, "annoyedscore": 0, "dontcarescore": 0, "happyscore": 0, "inspiredscore": 0, "sadscore": 0}
 
     #repeat the query for every filter

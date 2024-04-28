@@ -1,0 +1,72 @@
+{
+  "song": [
+    {
+      "synset": [
+        "synset-so-adverb-3",
+        "synset-surface-noun-3",
+        "synset-shoe-noun-1",
+        "synset-faithless-adjectivesatellite-1"
+      ],
+      "id": 0
+    },
+    {
+      "synset": [
+        "synset-undertow-noun-1"
+      ],
+      "id": 1
+    },
+    {
+      "synset": [
+        "synset-less-adverb-1",
+        "synset-much-adverb-5",
+        "synset-there-adverb-1"
+      ],
+      "id": 2
+    },
+    {
+      "synset": [
+        "synset-properly-adverb-1",
+        "synset-excessively-adverb-1"
+      ],
+      "id": 3
+    },
+    {
+      "synset": [
+        "synset-more-adjective-1",
+        "synset-moment-noun-2",
+        "synset-undertow-noun-1"
+      ],
+      "id": 4
+    },
+    {
+      "synset": [
+        "synset-there-adverb-1",
+        "synset-less-adverb-1",
+        "synset-much-adverb-5"
+      ],
+      "id": 5
+    },
+    {
+      "synset": [
+        "synset-besides-adverb-2",
+        "synset-precisely-adverb-1"
+      ],
+      "id": 6
+    },
+    {
+      "synset": [
+        "synset-much-adverb-5",
+        "synset-there-adverb-1",
+        "synset-less-adverb-1"
+      ],
+      "id": 7
+    },
+    {
+      "synset": [
+        "synset-there-adverb-1",
+        "synset-so-adverb-7"
+      ],
+      "id": 8
+    }
+  ]
+}

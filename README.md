@@ -37,10 +37,10 @@ Da runnare nella cartella code e dopo aver eseguito lo script di Popi
 
 ### Testing
 
-Per testare lo script che ti restituisce il grafo rdf 
+Per testare l'intera pipeline runnare il file main.py
 
 ```
-sh rdf.sh "Nome autore" "Nome canzone"
+python3 main,py "Nome autore" "Nome canzone"
 ```
 
 L'output sarà nel file out.nq

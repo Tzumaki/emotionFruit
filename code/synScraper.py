@@ -1,6 +1,24 @@
 import sys
 import re
 import json
+import csv
+
+
+def countSynsets(quadruple: list):
+    countSynWord = 0
+    synsetLines = []
+
+    for line in quadruple: 
+        if "synset" in line:
+            synsetLines.append(line)
+            countSynWord += 1
+
+    if(countSynWord > 0):
+        print(f"synset trovati nel documento: {countSynWord}")
+    else:
+        exit("Non ci sono synset :(")
+    return synsetLines
+
 
 def regexSubject(todoRegex: list):
     regExp = ""
@@ -11,6 +29,7 @@ def regexSubject(todoRegex: list):
         filteredWords.append(regExp)
     
     return filteredWords   
+
 
 def filterSynset(synsetLines: list):
     outputWords = [] # numVerse
@@ -33,8 +52,6 @@ def filterSynset(synsetLines: list):
 
     if(countSynSubj > 0):
         print(f"synset oggetto totali: {countSynSubj}")
-        # print(todoRegex)
-        # print(synsetDis)
         outputWords = regexSubject(todoRegex)
 
         return outputWords,synsetDis
@@ -43,75 +60,81 @@ def filterSynset(synsetLines: list):
         return 0
 
 
+def extractTextCsv():
+    with open('out.csv', mode='r') as outCsv:
+        allTextCsv = []
+        csvReader = csv.reader(outCsv, delimiter=';', skipinitialspace=True)
+        header = []
+        header = next(outCsv) # skip the fields row
+
+        for row in csvReader:
+            allTextCsv.append(row[3]) # append the content
+        return allTextCsv
+
+
+def createDict(allTextCsv: list, verses: list, synsets: list):
+    songDictionary = {} # create json file using the following dictionary
+
+    for verse, synset in zip(verses, synsets): # iterate over the lists
+        intVerse = int(verse[0]) # convert id to integer
+        
+        if intVerse in songDictionary:
+            songDictionary[intVerse]["synset"].append(synset)
+        else: # create a new entry
+            songDictionary[intVerse] = {
+                "synset": [synset],
+                "id": intVerse,
+                "text": allTextCsv[intVerse]
+            }
+    sortedDict = sorted(songDictionary.values(), key=lambda x: x["id"]) # sort the verses by id
+    return sortedDict
+
+
+def createJson(songDict: dict):
+    finalObject = {"song": songDict} #TODO da aggiungere author e title
+    filename = "synScraperOutput.json"
+
+    # save the final object to a separate JSON file
+    with open(filename, 'w') as jsonFile:
+        json.dump(finalObject, jsonFile, indent=2)
+
+    print(f"JSON object saved to {filename}")
+
+
+def synScraper(rdfFile):
+    if(len(sys.argv)!= 2):
+        exit("wrong parameters! \nusage: python synScraper <path_to_file.nq)>")
+
+
+    nqFile = open(sys.argv[1], "r")
+    quadruple = nqFile.readlines()
+    
+
+    # structures for filter
+    synsetLines = []
+    verseAndSynsets = []
+    verses = []
+    synsets = []
+
+    synsetLines = countSynsets(quadruple)
+    verseAndSynsets = filterSynset(synsetLines)   # list of: list of verses AND list of synsets
+    verses = verseAndSynsets[0]
+    synsets = verseAndSynsets[1]
+
+
+    # structures for json
+    allTextCsv = []
+    songDict = {}
+
+    allTextCsv = extractTextCsv() # list of lyrics by verse
+    songDict = createDict(allTextCsv, verses, synsets)
+    createJson(songDict)
+
+
+    nqFile.close()
+
 
 if __name__ == "__main__":
     if(len(sys.argv)!= 2):
         exit("wrong parameters! \nusage: python synScraper <path_to_file.nq)>")
-
-    nqFile = open(sys.argv[1], "r")
-
-    quadruple = nqFile.readlines()
-
-    countSynWord = 0
-    synsetLines = []
-
-    # output of filter
-    numVerse_synsets = []
-    verses = []
-    synsets = []
-
-    for line in quadruple: 
-        if "synset" in line:
-            synsetLines.append(line)
-            countSynWord += 1
-
-    if(countSynWord > 0):
-        print(f"synset trovati nel documento: {countSynWord}")
-    else:
-        exit("Non ci sono synset :(")
-
-    numVerse_synsets = filterSynset(synsetLines)   # list of: list of verses AND list of synsets
-    print(f"BOTH{numVerse_synsets}")
-    verses = numVerse_synsets[0]
-    print(verses)
-    synsets = numVerse_synsets[1]
-    print(synsets)
-        
-    # create json file
-    '''
-    data = {}
-    for i, name in enumerate(numVerse_synsets):
-        data[name] = synsets[i]
-    json_data = json.dumps(data)
-    with open("synsetOut.json", "w") as f:
-        f.write(json_data)
-    '''
-
-    song_dict = {}
-
-    for id_, synset in zip(verses, synsets): # iterate over the lists
-        id_val = int(id_[0]) # convert id to integer
-        
-        if id_val in song_dict:
-            song_dict[id_val]["synset"].append(synset)
-        else: # create a new entry
-            song_dict[id_val] = {
-                "synset": [synset],
-                "id": id_val
-            }
-
-    sorted_songs = sorted(song_dict.values(), key=lambda x: x["id"]) # sort the verses by id
- 
-    final_object = {"song": sorted_songs}
-
-    filename = "synScraperOutput.json"
-
-    # save the final object to a separate JSON file
-    with open(filename, 'w') as json_file:
-        json.dump(final_object, json_file, indent=2)
-
-    print(f"JSON object saved to {filename}")
-
-    
-
-    nqFile.close()
+    synScraper(sys.argv[1])

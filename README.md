@@ -1,5 +1,10 @@
 # PROGETTO INFORMATICA UMANISTICA
 
+## Prompt ChatGPT
+```
+fingi di essere un esperto di emozioni ritorna una tabella con la percentuale delle più presenti tra rabbia, divertimento, fastidio, indifferenza, felicità ed ispirazione in (titolo canzone) di (autore)
+```
+
 ## Query SPARQL
 In /code runnare:
 ```

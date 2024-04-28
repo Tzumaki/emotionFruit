@@ -102,11 +102,7 @@ def createJson(songDict: dict):
 
 
 def synScraper(rdfFile):
-    if(len(sys.argv)!= 2):
-        exit("wrong parameters! \nusage: python synScraper <path_to_file.nq)>")
-
-
-    nqFile = open(sys.argv[1], "r")
+    nqFile = open(rdfFile, "r")
     quadruple = nqFile.readlines()
     
 

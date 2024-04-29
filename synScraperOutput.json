@@ -1,0 +1,22 @@
+{
+  "song": [
+    {
+      "synset": [
+        "synset-doorway-noun-1",
+        "synset-head-noun-1",
+        "synset-prostitute-noun-1",
+        "synset-bed-noun-1",
+        "synset-hellion-noun-1"
+      ],
+      "id": 0
+    },
+    {
+      "synset": [
+        "synset-baby-noun-1",
+        "synset-choir-noun-2",
+        "synset-mother-noun-5"
+      ],
+      "id": 3
+    }
+  ]
+}

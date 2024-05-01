@@ -4,14 +4,12 @@ In order to run this code without error you need to install the next library:
 """
 import azapi
 
-API = azapi.AZlyrics('duckduckgo', accuracy=0.5)
+API = azapi.AZlyrics('google', accuracy=0.5)
 
-API.artist = 'Taylor Swift'
-API.title = 'Bad Blods'
+API.artist = 'Linkin Park'
+API.title = 'Numb'
 
 API.getLyrics(save=False, ext='lrc')
 
 print(API.lyrics)
 
-# Correct Artist and Title are updated from webpage
-print(API.title, API.artist)

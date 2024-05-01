@@ -1,0 +1,21 @@
+
+out.nq
+output.txt
+
+code/__pycache__
+code/out.csv
+code/synScraperOutput.json
+
+#Tool del prof
+machine-reading/
+bin
+include
+lib
+lib64
+pyvenv.cfg
+machine-reading/build
+machine-reading/machine_reading/__pycache__
+machine-reading
+
+/*.swp
+*.swp

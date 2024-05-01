@@ -1,0 +1,17 @@
+fanter@DESKTOP-0BB40R6:~/Progetto-Informatica-umanistica/machine-reading$ python3 mr.py -m amr2fred -d ';' -n 'https://w3id.org/stlab/mr_data/' -o ../out.nq ../code/out.csv
+	Started bundle Bundle(ID=14, Name=workflows)
+	The corpus processor cannot run as the machine reading workflow is not enabled.
+	1 machine readers available.
+	Started bundle Bundle(ID=15, Name=amr)
+	Framework created.
+	Processing row 0 with content:  Hey Been tryin' to meet you mm-hm Hey must be a devil between us Or whores in my head Whores at the door whore in my bed But hey Where have you been? If you go I will surely die
+	HTTP Error 500: Internal Server Error
+	Processing row 1 with content:  We're chained We're chained We're chained We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained
+	HTTP Error 500: Internal Server Error
+	Processing row 2 with content:  "Uh!" Said the man to the lady mm-hm "Uh!" Said the lady to the man she adored And the whores like a choir Go "Uh!" all night And Mary ain't you tired of this? "Uh!" is the sound That the mother makes when the baby breaks
+	HTTP Error 500: Internal Server Error
+	Processing row 3 with content:  We're chained We're chained We're chained We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained (Chained) We're chained
+	HTTP Error 500: Internal Server Error
+
+
+# Nel file csv è presente la divisione in strofe di Hey dei Pixies

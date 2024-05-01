@@ -1,5 +1,53 @@
 # PROGETTO INFORMATICA UMANISTICA
 
+## Prompt ChatGPT
+```
+fingi di essere un esperto di emozioni ritorna una tabella con la percentuale delle più presenti tra rabbia, divertimento, fastidio, indifferenza, felicità ed ispirazione in (titolo canzone) di (autore)
+```
+
+## Query SPARQL
+In /code runnare:
+```
+python3 sparql_query.py
+```
+nota: serve un file synScraperOutput.json popolato
+
+## Output desiderato
+```
+{
+  "song" : [
+    {
+      "synset" : ["synset1", "synset2"]],
+      "text" : "testo",
+      "id": numStrofa
+    },
+    {
+      altro oggetto strofa
+    }
+  ]
+  "author" : "Ariana Grande"
+  "title" : "One Last Time"
+}
+```
+## Da nq ad array di stringhe
+```
+python3 synScraper.py ../out.nq
+```
+Da runnare nella cartella code e dopo aver eseguito lo script di Popi
+
+### Testing
+
+Per testare l'intera pipeline runnare il file main.py
+
+```
+python3 main,py "Nome autore" "Nome canzone"
+```
+
+L'output sarà nel file out.nq
+
+
+### Email professore
+
 Email del professore:
 
 FRED (il testo va prima tradotto in inglese): produce automaticamente un knowledge graph a partire da un testo in inglese. Per annotare le emozioni occorre poi fare una query a Framester.

@@ -1,8 +1,13 @@
 # PROGETTO INFORMATICA UMANISTICA
 
 ## Prompt ChatGPT
+Giulia e Simone
 ```
 fingi di essere un esperto di emozioni ritorna una tabella con la percentuale delle più presenti tra rabbia, divertimento, fastidio, indifferenza, felicità ed ispirazione in (titolo canzone) di (autore)
+```
+Aldo
+```
+Assuming the following emotion categories (as described in the theory by Ekman), associate each sentence of the following text with one or more categories.
 ```
 
 ## Query SPARQL

@@ -1,15 +1,11 @@
-
 {
-	"song" : [
-		{
-			"synset" : ["nere"],
-			"text" : ["di sere neeeereeeeeee"],
-		    "id" : 0	
-		},
-		{
-			"altro oggetto":"altre cose"
-		}
-	],
-	"author": "Tiziano Ferro",
-	"title": "Sere Nere"
+    "song": [{
+        "synset" : ["asdf","asdf","asdf","asdf","asdf","asdf","asdf","asfde"],
+        "text" : "...di sere nere...",
+        "id" : 2
+    }],
+    "title" : "Sere Nere",
+    "author" : "Tiziano Ferro"
 }
+
+

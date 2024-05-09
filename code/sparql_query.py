@@ -44,7 +44,7 @@ def sparql_query():
     f.close()
 
 
-    finalResults = {#"title": data["title"], "author": data["author"], 
+    finalResults = {"title": data["title"], "author": data["author"], 
                     "scores": []}
 
     for verse in range(len(data["song"])):

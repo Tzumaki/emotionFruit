@@ -15,5 +15,6 @@ if __name__ == "__main__":
     songTitle = sys.argv[2]
     outputFile = createCSV(author,songTitle)
     process = subprocess.run(["sh","rdf.sh"] + [outputFile])
-    synScraper("out.nq")
+    #Passare a synScraper un array con le strofe del testo per formattare correttamente il json risultante ("text" o "lyrics": "Lorem ipsum bla bla bla")
+    synScraper("out.nq", author, songTitle)
     sparql_query()

@@ -23,7 +23,7 @@ def createCSV(author,song):
             arrayStrofe.append(strofa.replace("\n"," ").replace(",",""))
     df = pd.DataFrame(dict)
     df.to_csv(outputFile, sep=";",index=False) 
-    return outputFile, arrayStrofe
+    return outputFile, arrayStrofe, songObject["artist"]
     
 
 if __name__ == "__main__":

@@ -8,12 +8,12 @@ import subprocess
 
 
 if __name__ == "__main__":
-    if(len(sys.argv)!= 3):
+    if(len(sys.argv)>3):
         exit("wrong parameters!")
 
-    author = sys.argv[1]
-    songTitle = sys.argv[2]
-    outputFile,arrayStrofe = createCSV(author,songTitle)
+    songTitle = sys.argv[1]
+    author = sys.argv[2] if len(sys.argv)==3 else "" 
+    outputFile,arrayStrofe,author = createCSV(author,songTitle)
     process = subprocess.run(["sh","rdf.sh"] + [outputFile])
     synScraper("out.nq")
     sparql_query()

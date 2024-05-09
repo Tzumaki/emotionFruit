@@ -44,12 +44,8 @@ def filterSynset(synsetLines: list):
 
 
 
-if __name__ == "__main__":
-    if(len(sys.argv)!= 2):
-        exit("wrong parameters! \nusage: python synScraper <path_to_file.nq)>")
-
-    nqFile = open(sys.argv[1], "r")
-
+def synScraper(rdfFile):
+    nqFile = open(rdfFile, "r")
     quadruple = nqFile.readlines()
 
     countSynWord = 0
@@ -112,6 +108,11 @@ if __name__ == "__main__":
 
     print(f"JSON object saved to {filename}")
 
-    
 
     nqFile.close()
+
+
+if __name__ == "__main__":
+    if(len(sys.argv)!= 2):
+        exit("wrong parameters! \nusage: python synScraper <path_to_file.nq)>")
+    synScraper(sys.argv[1])

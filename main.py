@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     author = sys.argv[1]
     songTitle = sys.argv[2]
-    outputFile = createCSV(author,songTitle)
+    outputFile,arrayStrofe = createCSV(author,songTitle)
     process = subprocess.run(["sh","rdf.sh"] + [outputFile])
     synScraper("out.nq")
     sparql_query()

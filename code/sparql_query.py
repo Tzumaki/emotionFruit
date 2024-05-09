@@ -18,6 +18,24 @@ data = {"song": [
 }
 """
 
+def percentage(emotions):
+    total = 0
+    percentages = emotions.copy()
+
+    for key in emotions:
+        if key != "id":
+            total += emotions[key]
+
+    for key in percentages:
+        if key != "id":
+            # x = value*100 / total
+            percentages[key] = emotions[key] * 100 / total
+
+    print("Array of percentages:")
+    print(percentages)
+    return percentages
+    
+
 
 
 def sparql_query():
@@ -114,15 +132,15 @@ def sparql_query():
 
                 #check if the dict doesn't have the 'angryscore' field in it
                 if 'angryscore' in result["results"]["bindings"][0]:
-                    print("Query for " + i + ":")
-                    print("Angry: " +   knowledge["angryscore"]["value"])
-                    print("Amused: " +  knowledge["amusedscore"]["value"])
-                    print("Annoyed: " + knowledge["annoyedscore"]["value"])
-                    print("Don't care: " +  knowledge["dontcarescore"]["value"])
-                    print("Happy: " +   knowledge["happyscore"]["value"])
-                    print("Inspired: " +    knowledge["inspiredscore"]["value"])
-                    print("Sad: " + knowledge["sadscore"]["value"])
-                    print("End of the query \n")
+                    #print("Query for " + i + ":")
+                    #print("Angry: " +   knowledge["angryscore"]["value"])
+                    #print("Amused: " +  knowledge["amusedscore"]["value"])
+                    #print("Annoyed: " + knowledge["annoyedscore"]["value"])
+                    #print("Don't care: " +  knowledge["dontcarescore"]["value"])
+                    #print("Happy: " +   knowledge["happyscore"]["value"])
+                    #print("Inspired: " +    knowledge["inspiredscore"]["value"])
+                    #print("Sad: " + knowledge["sadscore"]["value"])
+                    #print("End of the query \n")
 
                     score["angryscore"] += float(knowledge["angryscore"]["value"])
                     score["amusedscore"] += float(knowledge["amusedscore"]["value"])
@@ -138,6 +156,7 @@ def sparql_query():
                 continue
 
         finalResults["scores"].append(score)
+        percentage(score)
 
 
     print(finalResults)

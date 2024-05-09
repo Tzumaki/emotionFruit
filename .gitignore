@@ -6,6 +6,7 @@ code/__pycache__
 code/out.csv
 code/synScraperOutput.json
 
+
 #Tool del prof
 machine-reading/
 bin
@@ -19,3 +20,5 @@ machine-reading
 
 /*.swp
 *.swp
+out.csv
+synScraperOutput.json

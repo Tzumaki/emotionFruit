@@ -19,6 +19,7 @@ data = {"song": [
 """
 
 
+listOfValues = []
 
 def sparql_query():
     f = open('synScraperOutput.json')
@@ -141,6 +142,7 @@ def sparql_query():
 
 
     print(finalResults)
+    return finalResults
 
 
 if __name__ == "__main__":

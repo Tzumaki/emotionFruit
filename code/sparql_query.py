@@ -18,6 +18,16 @@ data = {"song": [
 }
 """
 
+def checkValues(scores):
+    atLeastOneValue = False
+
+    for key in scores:
+        if key != "id" and key != "text":
+            if scores[key] != 0:
+                atLeastOneValue = True
+
+    return atLeastOneValue
+
 def percentage(emotions):
     total = 0
     percentages = emotions.copy()
@@ -27,7 +37,7 @@ def percentage(emotions):
             total += emotions[key]
 
     for key in percentages:
-        if key != "id":
+        if key != "id" and key != "text":
             # x = value*100 / total
             percentages[key] = emotions[key] * 100 / total
 
@@ -155,8 +165,9 @@ def sparql_query():
             else:
                 continue
 
-        finalResults["scores"].append(score)
-        percentage(score)
+        if checkValues(score):
+            finalResults["scores"].append(score)
+            percentage(score)
 
 
     print(finalResults)

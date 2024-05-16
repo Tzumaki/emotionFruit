@@ -19,4 +19,5 @@ machine-reading
 
 /*.swp
 *.swp
+*.csv
 synScraperOutput.json

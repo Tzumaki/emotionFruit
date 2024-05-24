@@ -49,7 +49,7 @@ def songAssembler(synsnetList, text, id):
     songData["id"] = id
     return songData
 
-def synScraper(rdfFile):
+def synScraper(rdfFile, author, songTitle):
     nqFile = open(rdfFile, "r")
     quadruple = nqFile.readlines()
 
@@ -103,7 +103,7 @@ def synScraper(rdfFile):
 
     sorted_songs = sorted(song_dict.values(), key=lambda x: x["id"]) # sort the verses by id
  
-    final_object = {"song": sorted_songs}
+    final_object = {"song": sorted_songs, "author": author, "title": songTitle}
 
     filename = "synScraperOutput.json"
 

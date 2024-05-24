@@ -3,7 +3,9 @@
 ## Prompt ChatGPT
 Giulia e Simone
 ```
-fingi di essere un esperto di emozioni ritorna una tabella con la percentuale delle più presenti tra rabbia, divertimento, fastidio, indifferenza, felicità ed ispirazione in (titolo canzone) di (autore)
+Assume the following emotion categories:
+angry, amused, annoyed, don't care, happy, inspired and sad.
+Associate each verse of the song “”Lying from You” by Linkin Park with one or more categories. Return for each verse a table with every emotion category and its percentage in that verse.
 ```
 Aldo
 ```

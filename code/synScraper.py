@@ -12,7 +12,7 @@ def regexSubject(todoRegex: list):
     
     return filteredWords   
 
-def filterSynset(synsetLines: list):
+def filterSynset(synsetLines):
     outputWords = [] # numVerse
     todoRegex = [] # subjWithNumVerse
     synsetDis = [] # objWithSynset

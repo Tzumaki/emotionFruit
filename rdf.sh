@@ -7,4 +7,4 @@ else
 fi
 
 pip install .
-python3 mr.py -m amr2fred -d ';' -n 'https://w3id.org/stlab/mr_data/' -o ../out.nq ../$1
+python3 mr.py -m amr2fred -d ';' -n 'https://w3id.org/stlab/mr_data/' -o ../SavedSongs/$2.nq ../$1 

@@ -2,98 +2,79 @@
   "song": [
     {
       "synset": [
-        "synset-liveliness-noun-2",
-        "synset-rhythm-noun-1",
-        "synset-time-noun-1",
-        "synset-merely-adverb-1",
-        "synset-fiddling-adjectivesatellite-1",
-        "synset-eye-noun-1",
-        "synset-music-noun-5",
-        "synset-company-noun-4",
-        "synset-sky-noun-1",
-        "synset-aside-adverb-2",
-        "synset-bit-noun-2",
-        "synset-galaxy-noun-3"
-      ],
-      "id": 0
-    },
-    {
-      "synset": [
-        "synset-rebel-verb-2",
-        "synset-baby-noun-7"
+        "synset-race-noun-2",
+        "synset-brake_shoe-noun-1",
+        "synset-lonely-adjectivesatellite-2",
+        "synset-weight-noun-4",
+        "synset-anywhere-adverb-1",
+        "synset-buttocks-noun-1"
       ],
       "id": 1
     },
     {
       "synset": [
-        "synset-night-noun-1",
-        "synset-moonlight-noun-1"
+        "synset-tide-noun-2",
+        "synset-question-noun-2",
+        "synset-occupation-noun-1",
+        "synset-more-adjective-1",
+        "synset-adequate-adjectivesatellite-2",
+        "synset-again-adverb-1",
+        "synset-water_system-noun-2",
+        "synset-now-adverb-1",
+        "synset-hand-noun-1"
       ],
       "id": 2
     },
     {
       "synset": [
-        "synset-excessively-adverb-1",
-        "synset-constantly-adverb-2",
-        "synset-immediately-adverb-1",
-        "synset-energy-noun-1",
-        "synset-star-noun-1",
-        "synset-sky-noun-1",
-        "synset-far-adverb-1",
-        "synset-eye-noun-1"
+        "synset-yesterday-noun-2",
+        "synset-world-noun-8",
+        "synset-trouble-noun-1",
+        "synset-by_chance-adverb-3",
+        "synset-one-noun-1",
+        "synset-brush-verb-4",
+        "synset-bass-noun-2",
+        "synset-stead-noun-1",
+        "synset-means-noun-1",
+        "synset-now-adverb-4"
       ],
       "id": 3
     },
     {
       "synset": [
-        "synset-rebel-verb-2",
-        "synset-baby-noun-7"
+        "synset-hand-noun-1",
+        "synset-water_system-noun-2",
+        "synset-question-noun-2",
+        "synset-tide-noun-2",
+        "synset-more-adjective-2",
+        "synset-occupation-noun-1",
+        "synset-now-adverb-1",
+        "synset-adequate-adjectivesatellite-2",
+        "synset-again-adverb-1"
       ],
       "id": 4
     },
     {
       "synset": [
-        "synset-night-noun-1",
-        "synset-moonlight-noun-1"
+        "synset-lone-adjectivesatellite-2",
+        "synset-promontory-noun-1",
+        "synset-anywhere-adverb-1"
       ],
       "id": 5
     },
     {
       "synset": [
-        "synset-tonight-noun-1"
+        "synset-tune-noun-1",
+        "synset-lone-adjectivesatellite-2",
+        "synset-now-adverb-1"
       ],
       "id": 6
     },
     {
       "synset": [
-        "synset-therefore-adverb-1",
-        "synset-electric-adjectivesatellite-3",
-        "synset-even-adverb-3",
-        "synset-rocket-noun-4"
+        "synset-lapse-verb-3"
       ],
       "id": 7
-    },
-    {
-      "synset": [
-        "synset-baby-noun-7"
-      ],
-      "id": 8
-    },
-    {
-      "synset": [
-        "synset-moonlight-noun-1",
-        "synset-starlight-noun-1",
-        "synset-night-noun-1"
-      ],
-      "id": 9
-    },
-    {
-      "synset": [
-        "synset-moonlight-noun-1",
-        "synset-starlight-noun-1",
-        "synset-night-noun-1"
-      ],
-      "id": 11
     }
   ]
 }

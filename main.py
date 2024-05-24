@@ -6,6 +6,7 @@ from synScraper import synScraper
 from sparql_query import sparql_query
 from emotionsChart import drawCharts
 import subprocess  
+savedSongsDirectory = "SavedSongs/" 
 import argparse
 
 
@@ -27,9 +28,9 @@ if __name__ == "__main__":
         else:
             exit("file does not exist or wrong file format")
     else:
-        outputFile = createCSV(author,songTitle)
-        process = subprocess.run(["sh","rdf.sh"] + [outputFile])
-        synScraper("out.nq", author, songTitle)
+        outputFile,arrayStrofe,author, songTitle = createCSV(author,songTitle)
+        process = subprocess.run(["sh","rdf.sh"] + [outputFile, songTitle])
+        synScraper(savedSongsDirectory + songTitle+ ".nq", author, songTitle)
 
     listOfEmotions = sparql_query()
     print(listOfEmotions)

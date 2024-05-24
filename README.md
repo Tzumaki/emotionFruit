@@ -47,7 +47,7 @@ Da runnare nella cartella code e dopo aver eseguito lo script di Popi
 Per testare l'intera pipeline runnare il file main.py
 
 ```
-python3 main.py "Nome autore" "Nome canzone"
+python3 main.py "Nome canzone" "Nome autore"
 ```
 
 L'output sarà nel file out.nq

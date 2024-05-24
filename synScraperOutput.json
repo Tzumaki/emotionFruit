@@ -2,91 +2,71 @@
   "song": [
     {
       "synset": [
-        "synset-family-noun-1",
-        "synset-gold-adjectivesatellite-1"
-      ],
-      "id": 0
-    },
-    {
-      "synset": [
-        "synset-then-adverb-1"
+        "synset-baby-noun-1",
+        "synset-even-adverb-4",
+        "synset-merely-adverb-1",
+        "synset-excessively-adverb-1",
+        "synset-much-adjective-1"
       ],
       "id": 1
     },
     {
       "synset": [
-        "synset-thing-noun-7",
-        "synset-handwriting-noun-1",
-        "synset-flower-noun-2",
-        "synset-name-noun-3",
-        "synset-Sand-noun-2",
-        "synset-hour-noun-1"
+        "synset-approximately-adverb-1"
       ],
       "id": 2
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-sparkle-noun-1",
+        "synset-one-noun-1"
       ],
       "id": 3
     },
     {
       "synset": [
-        "synset-compunction-noun-1",
-        "synset-word-noun-2",
-        "synset-nail-noun-2",
-        "synset-rose-noun-1"
+        "synset-sky-noun-1",
+        "synset-time-noun-1",
+        "synset-overdrive-noun-1",
+        "synset-road-noun-2",
+        "synset-sunlight-noun-1"
       ],
       "id": 4
     },
     {
       "synset": [
-        "synset-baby-noun-1",
-        "synset-then-adverb-1"
+        "synset-approximately-adverb-1",
+        "synset-city-noun-2"
       ],
       "id": 5
     },
     {
       "synset": [
-        "synset-name-noun-3",
-        "synset-hour-noun-2",
-        "synset-flower-noun-2",
-        "synset-Sand-noun-2",
-        "synset-handwriting-noun-1",
-        "synset-thing-noun-7"
+        "synset-sparkle-noun-1"
       ],
       "id": 6
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-time-noun-1",
+        "synset-barely-adverb-1",
+        "synset-back-adverb-6"
       ],
       "id": 7
     },
     {
       "synset": [
-        "synset-then-adverb-1"
+        "synset-lighter-noun-2"
       ],
       "id": 8
     },
     {
       "synset": [
-        "synset-hour-noun-1",
-        "synset-Sand-noun-2",
-        "synset-name-noun-3",
-        "synset-thing-noun-7",
-        "synset-flower-noun-3",
-        "synset-handwriting-noun-1"
-      ],
-      "id": 9
-    },
-    {
-      "synset": [
-        "synset-baby-noun-1"
+        "synset-lighter-noun-2"
       ],
       "id": 10
     }
   ],
-  "author": "Pixies",
-  "title": "Hey"
+  "author": "The Weekend",
+  "title": "Blinding Lights"
 }

@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from bubbleChart import drawBubbles
-import numpy as np
+import json
 
 LABELS =  ["angry", "amused", "annoyed", "dont care", "happy", "inspired", "sad"]
 COLORS = ["red", "pink", "grey", "purple", "orange", "green", "blue"]
@@ -58,6 +58,13 @@ def drawCharts(data, author, song):
     plt.show()
     drawBubbles(totalScores)
     drawLines(allSongScores)
+
+def drawChartsFromJson(file, author, song):
+    f = open(file)
+    emotions = json.load(f)
+    f.close()
+
+    drawCharts(emotions, author, song)
 
 if __name__ == "__main__":
     data = {'scores': [{'id': 3, 'angryscore': 0.38662, 'amusedscore': 0.1834709, 'annoyedscore': 0.0199918, 'dontcarescore': 0.38682500000000003, 'happyscore': 0.27270700000000003, 'inspiredscore': 0.26410900000000004, 'sadscore': 0.0815309}]}

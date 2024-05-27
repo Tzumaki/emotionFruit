@@ -23,4 +23,4 @@ machine-reading
 out.csv
 synScraperOutput.json
 *.csv
-synScraperOutput.json
+./synScraperOutput.json

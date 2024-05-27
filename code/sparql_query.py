@@ -175,9 +175,8 @@ def sparql_query(withText):
                 continue
 
         if checkValues(score):
-            finalResults["scores"].append(score)
-            #TODO: RITORNARE PERCENTUALI NEL FINAL RESULTS
-            percentage(score)
+            percentageScores = percentage(score)
+            finalResults["scores"].append(percentageScores)            
 
 
     print(finalResults)

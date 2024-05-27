@@ -68,30 +68,39 @@ def extractTextCsv():
         header = next(outCsv) # skip the fields row
 
         for row in csvReader:
-            allTextCsv.append(row[3]) # append the content
+            allTextCsv.append(row[3]) # append the content from csv, third column
+
         return allTextCsv
 
 
 def createDict(allTextCsv: list, verses: list, synsets: list, checkCSV: bool):
     songDictionary = {} # create json file using the following dictionary
 
+    i = 0
+    j = 0
+    print("lunghezza lista testo csv", len(allTextCsv)) # should be 9 for justin
+
     for verse, synset in zip(verses, synsets): # iterate over the lists
         intVerse = int(verse[0]) # convert id to integer
+
+        print("intVerseee-> ID:", intVerse)
         
-        if intVerse in songDictionary:
+        if intVerse in songDictionary: # se id nel dict -> append
             songDictionary[intVerse]["synset"].append(synset)
-        else:
+        else: # nuovo id
             if not checkCSV: # json without csv
                 songDictionary[intVerse] = {
                     "synset": [synset],
                     "id": intVerse
                 }
             else: # json with csv
+                i += 1
                 songDictionary[intVerse] = {
                     "synset": [synset],
                     "id": intVerse,
-                    "text": allTextCsv[intVerse]
+                    "text": allTextCsv[intVerse] # se il csv comincia con strofa 1 dovrebbe essere -> allTextCsv[intVerse-1]
                 }
+
     sortedDict = sorted(songDictionary.values(), key=lambda x: x["id"]) # sort the verses by id
     return sortedDict
 
@@ -120,6 +129,7 @@ def synScraper(rdfFile, author, songTitle, checkCSV):
 
     synsetLines = countSynsets(quadruple)
     verseAndSynsets = filterSynset(synsetLines)   # list of: list of verses AND list of synsets
+    print("----------------------")
     verses = verseAndSynsets[0]
     synsets = verseAndSynsets[1]
 

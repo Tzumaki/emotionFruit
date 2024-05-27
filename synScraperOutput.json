@@ -2,52 +2,58 @@
   "song": [
     {
       "synset": [
-        "synset-kernel-noun-3",
-        "synset-good-noun-3",
+        "synset-name-noun-1",
         "synset-baseball_club-noun-1",
-        "synset-name-noun-1"
+        "synset-good-noun-3",
+        "synset-kernel-noun-3"
       ],
-      "id": 1
+      "id": 0,
+      "text": "For all the times that you rained on my parade And all the clubs you get in using my name You think you broke my heart oh girl for goodness' sake You think I'm cryin' on my own well I ain't"
     },
     {
       "synset": [
-        "synset-song-noun-1",
         "synset-baby-noun-7",
-        "synset-telephone-noun-1"
+        "synset-telephone-noun-1",
+        "synset-song-noun-1"
       ],
-      "id": 2
+      "id": 1,
+      "text": "And I didn't wanna write a song 'Cause I didn't want anyone thinking I still care I don't but you still hit my phone up And baby I'll be movin' on And I think you should be somethin' I don't wanna hold back Maybe you should know that"
     },
     {
       "synset": [
-        "synset-nowadays-adverb-1",
+        "synset-occupation-noun-1",
         "synset-ma-noun-1",
-        "synset-occupation-noun-1"
+        "synset-nowadays-adverb-1"
       ],
-      "id": 3
+      "id": 2,
+      "text": "My mama don't like you and she likes everyone And I never like to admit that I was wrong And I've been so caught up in my job didn't see what's going on But now I know I'm better sleeping on my own"
     },
     {
       "synset": [
-        "synset-still-adverb-1",
+        "synset-means-noun-1",
         "synset-a_lot-adverb-1",
-        "synset-means-noun-1"
+        "synset-still-adverb-1"
       ],
-      "id": 4
+      "id": 3,
+      "text": "'Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holdin' on to somethin' You should go and love yourself"
     },
     {
       "synset": [
-        "synset-trouble-noun-1",
         "synset-supporter-noun-1",
+        "synset-trouble-noun-1",
         "synset-lone-adjectivesatellite-3"
       ],
-      "id": 5
+      "id": 4,
+      "text": "But when you told me that you hated my friends The only problem was with you and not them And every time you told me my opinion was wrong And tried to make me forget where I came from"
     },
     {
       "synset": [
+        "synset-baby-noun-7",
         "synset-song-noun-1",
-        "synset-telephone-noun-1",
-        "synset-baby-noun-7"
+        "synset-telephone-noun-1"
       ],
-      "id": 6
+      "id": 5,
+      "text": "And I didn't wanna write a song 'Cause I didn't want anyone thinking I still care I don't but you still hit my phone up And baby I'll be movin' on And I think you should be somethin' I don't wanna hold back Maybe you should know that"
     },
     {
       "synset": [
@@ -55,36 +61,40 @@
         "synset-ma-noun-1",
         "synset-occupation-noun-1"
       ],
-      "id": 7
+      "id": 6,
+      "text": "My mama don't like you and she likes everyone And I never like to admit that I was wrong And I've been so caught up in my job didn't see what's going on But now I know I'm better sleeping on my own"
     },
     {
       "synset": [
-        "synset-still-adverb-1",
         "synset-means-noun-1",
+        "synset-still-adverb-1",
         "synset-a_lot-adverb-1"
       ],
-      "id": 8
+      "id": 7,
+      "text": "'Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holdin' on to somethin' You should go and love yourself"
     },
     {
       "synset": [
-        "synset-belittled-adjectivesatellite-1",
-        "synset-now-adverb-3",
         "synset-wall-noun-4",
-        "synset-chump-noun-1",
-        "synset-so-adverb-7",
+        "synset-now-adverb-3",
         "synset-nothing-adverb-1",
-        "synset-abject-adjectivesatellite-1"
+        "synset-so-adverb-7",
+        "synset-chump-noun-1",
+        "synset-abject-adjectivesatellite-1",
+        "synset-belittled-adjectivesatellite-1"
       ],
-      "id": 9
+      "id": 8,
+      "text": "For all the times that you made me feel small I fell in love now I feel nothin' at all I never felt so low and I was vulnerable Was I a fool to let you break down my walls?"
     },
     {
       "synset": [
-        "synset-still-adverb-1",
-        "synset-much-adverb-4"
+        "synset-much-adverb-4",
+        "synset-still-adverb-1"
       ],
-      "id": 10
+      "id": 9,
+      "text": "'Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holdin' on to somethin' You should go and love yourself 'Cause if you like the way you look that much Oh baby you should go and love yourself And if you think that I'm still holdin' on to somethin' You should go and love yourself"
     }
   ],
-  "author": "author",
-  "title": "title"
+  "author": "Justin Bieber",
+  "title": "Love Yourself"
 }

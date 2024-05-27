@@ -24,13 +24,13 @@ if __name__ == "__main__":
 
     if args.file:
         if os.path.isfile(args.file) and str(args.file).endswith('.nq'):
-            synScraper(args.file, author, songTitle)
+            synScraper(args.file, author, songTitle, False)
         else:
             exit("file does not exist or wrong file format")
     else:
         outputFile,arrayStrofe,author, songTitle = createCSV(author,songTitle)
         process = subprocess.run(["sh","rdf.sh"] + [outputFile, songTitle])
-        synScraper(savedSongsDirectory + songTitle+ ".nq", author, songTitle)
+        synScraper(savedSongsDirectory + songTitle+ ".nq", author, songTitle, True)
 
     listOfEmotions = sparql_query()
     print(listOfEmotions)

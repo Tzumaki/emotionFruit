@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 from bubbleChart import drawBubbles
 import numpy as np
 
-LABELS =  ["angry", "amused", "annoyed","dont care", "happy", "inspired","sad"]
+LABELS =  ["angry", "amused", "annoyed", "dont care", "happy", "inspired", "sad"]
 COLORS = ["red", "pink", "grey", "purple", "orange", "green", "blue"]
-totalScores = [0,0,0,0,0,0,0]
+totalScores = [0, 0, 0, 0, 0, 0, 0]
 
 
 

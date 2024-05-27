@@ -28,7 +28,7 @@ def drawCharts(data, author, song):
     listOfScores = []
     allSongScores = []
 
-    fig, axs = plt.subplots(length)
+    fig, axs = plt.subplots(1, length, figsize=(2 * length, 5))  # 1 row, `length` columns
     fig.suptitle("Emotions of " + song + " by " + author)
 
     if length == 1:
@@ -45,8 +45,8 @@ def drawCharts(data, author, song):
 
         counter = 0
         for tup in listOfEmotions: # get a list of values for each emotions
-            listOfScores.append(tup[1]) 
-            totalScores[counter] += tup[1] # this is for the bubblechart, save the total
+            listOfScores.append(float(tup[1])) 
+            totalScores[counter] += float(tup[1]) # this is for the bubblechart, save the total
             counter += 1
 
         print(listOfScores)
@@ -57,7 +57,7 @@ def drawCharts(data, author, song):
             axs[i].set_title("verse n. "+ str(id))
         listOfScores.clear()
 
-    plt.legend(LABELS)
+    plt.legend(LABELS, bbox_to_anchor=(1.02, 1), loc='lower left', borderaxespad=0)
     plt.show()
     drawBubbles(totalScores)
     drawLines(allSongScores)

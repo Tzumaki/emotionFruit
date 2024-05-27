@@ -2,87 +2,85 @@
   "song": [
     {
       "synset": [
-        "synset-family-noun-1",
-        "synset-gold-adjectivesatellite-1"
-      ],
-      "id": 0
-    },
-    {
-      "synset": [
-        "synset-then-adverb-1"
+        "synset-kernel-noun-3",
+        "synset-good-noun-3",
+        "synset-baseball_club-noun-1",
+        "synset-name-noun-1"
       ],
       "id": 1
     },
     {
       "synset": [
-        "synset-thing-noun-7",
-        "synset-handwriting-noun-1",
-        "synset-flower-noun-2",
-        "synset-name-noun-3",
-        "synset-Sand-noun-2",
-        "synset-hour-noun-1"
+        "synset-song-noun-1",
+        "synset-baby-noun-7",
+        "synset-telephone-noun-1"
       ],
       "id": 2
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-nowadays-adverb-1",
+        "synset-ma-noun-1",
+        "synset-occupation-noun-1"
       ],
       "id": 3
     },
     {
       "synset": [
-        "synset-compunction-noun-1",
-        "synset-word-noun-2",
-        "synset-nail-noun-2",
-        "synset-rose-noun-1"
+        "synset-still-adverb-1",
+        "synset-a_lot-adverb-1",
+        "synset-means-noun-1"
       ],
       "id": 4
     },
     {
       "synset": [
-        "synset-baby-noun-1",
-        "synset-then-adverb-1"
+        "synset-trouble-noun-1",
+        "synset-supporter-noun-1",
+        "synset-lone-adjectivesatellite-3"
       ],
       "id": 5
     },
     {
       "synset": [
-        "synset-name-noun-3",
-        "synset-hour-noun-2",
-        "synset-flower-noun-2",
-        "synset-Sand-noun-2",
-        "synset-handwriting-noun-1",
-        "synset-thing-noun-7"
+        "synset-song-noun-1",
+        "synset-telephone-noun-1",
+        "synset-baby-noun-7"
       ],
       "id": 6
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-nowadays-adverb-1",
+        "synset-ma-noun-1",
+        "synset-occupation-noun-1"
       ],
       "id": 7
     },
     {
       "synset": [
-        "synset-then-adverb-1"
+        "synset-still-adverb-1",
+        "synset-means-noun-1",
+        "synset-a_lot-adverb-1"
       ],
       "id": 8
     },
     {
       "synset": [
-        "synset-hour-noun-1",
-        "synset-Sand-noun-2",
-        "synset-name-noun-3",
-        "synset-thing-noun-7",
-        "synset-flower-noun-3",
-        "synset-handwriting-noun-1"
+        "synset-belittled-adjectivesatellite-1",
+        "synset-now-adverb-3",
+        "synset-wall-noun-4",
+        "synset-chump-noun-1",
+        "synset-so-adverb-7",
+        "synset-nothing-adverb-1",
+        "synset-abject-adjectivesatellite-1"
       ],
       "id": 9
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-still-adverb-1",
+        "synset-much-adverb-4"
       ],
       "id": 10
     }

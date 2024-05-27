@@ -80,17 +80,18 @@ def createDict(allTextCsv: list, verses: list, synsets: list, checkCSV: bool):
         
         if intVerse in songDictionary:
             songDictionary[intVerse]["synset"].append(synset)
-        elif not checkCSV: # json without csv
-            songDictionary[intVerse] = {
-                "synset": [synset],
-                "id": intVerse
-            }
-        else: # json with csv
-            songDictionary[intVerse] = {
-                "synset": [synset],
-                "id": intVerse,
-                "text": allTextCsv[intVerse]
-            }
+        else:
+            if not checkCSV: # json without csv
+                songDictionary[intVerse] = {
+                    "synset": [synset],
+                    "id": intVerse
+                }
+            else: # json with csv
+                songDictionary[intVerse] = {
+                    "synset": [synset],
+                    "id": intVerse,
+                    "text": allTextCsv[intVerse]
+                }
     sortedDict = sorted(songDictionary.values(), key=lambda x: x["id"]) # sort the verses by id
     return sortedDict
 

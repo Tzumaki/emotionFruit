@@ -72,7 +72,7 @@ def extractTextCsv():
         return allTextCsv
 
 
-def createDict(allTextCsv: list, verses: list, synsets: list):
+def createDict(allTextCsv: list, verses: list, synsets: list, checkCSV: bool):
     songDictionary = {} # create json file using the following dictionary
 
     for verse, synset in zip(verses, synsets): # iterate over the lists
@@ -80,7 +80,12 @@ def createDict(allTextCsv: list, verses: list, synsets: list):
         
         if intVerse in songDictionary:
             songDictionary[intVerse]["synset"].append(synset)
-        else: # create a new entry
+        elif not checkCSV: # json without csv
+            songDictionary[intVerse] = {
+                "synset": [synset],
+                "id": intVerse
+            }
+        else: # json with csv
             songDictionary[intVerse] = {
                 "synset": [synset],
                 "id": intVerse,
@@ -100,7 +105,7 @@ def createJson(songDict: dict, author: str, songTitleClean:str):
 
     print(f"JSON object saved to {filename}")
 
-def synScraper(rdfFile, author, songTitle):
+def synScraper(rdfFile, author, songTitle, checkCSV):
 
     nqFile = open(rdfFile, "r")
     quadruple = nqFile.readlines()
@@ -122,8 +127,10 @@ def synScraper(rdfFile, author, songTitle):
     allTextCsv = []
     songDict = {}
 
-    allTextCsv = extractTextCsv() # list of lyrics by verse
-    songDict = createDict(allTextCsv, verses, synsets)
+    if(checkCSV):
+        allTextCsv = extractTextCsv() # list of lyrics by verse
+    
+    songDict = createDict(allTextCsv, verses, synsets, checkCSV)
 
     songTitleClean = songTitle.replace("_", " ")
     createJson(songDict, author, songTitleClean)

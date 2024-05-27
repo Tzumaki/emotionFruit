@@ -23,19 +23,23 @@ if __name__ == "__main__":
     author = args.Author
     songTitle = args.Title
 
+    listOfEmotions = []
+
     if args.emotions:
         drawChartsFromJson(args.emotions, author, songTitle)
         exit("Reading json end succesfully")
     elif args.file:
         if os.path.isfile(args.file) and str(args.file).endswith('.nq'):
-            synScraper(args.file, author, songTitle)
+            synScraper(args.file, author, songTitle, False)
+            listOfEmotions = sparql_query(False)
         else:
             exit("file does not exist or wrong file format")
     else:
         outputFile,arrayStrofe,author, songTitle = createCSV(author,songTitle)
         process = subprocess.run(["sh","rdf.sh"] + [outputFile, songTitle])
-        synScraper(savedSongsDirectory + songTitle+ ".nq", author, songTitle)
+        synScraper(savedSongsDirectory + songTitle+ ".nq", author, songTitle, True)
+        listOfEmotions = sparql_query(True)
 
-    listOfEmotions = sparql_query()
+    #listOfEmotions = sparql_query()
     print(listOfEmotions)
     drawCharts(listOfEmotions, author, songTitle)

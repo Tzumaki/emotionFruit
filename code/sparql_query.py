@@ -33,7 +33,7 @@ def percentage(emotions):
     percentages = emotions.copy()
 
     for key in emotions:
-        if key != "id":
+        if key != "id" and key != "text":
             total += emotions[key]
 
     for key in percentages:
@@ -49,7 +49,7 @@ def percentage(emotions):
 
 listOfValues = []
 
-def sparql_query():
+def sparql_query(withText):
     f = open('synScraperOutput.json')
     data = json.load(f)
     f.close()
@@ -67,11 +67,19 @@ def sparql_query():
         #specify the DBPedia endpoint
         sparql = SPARQLWrapper("http://etna.istc.cnr.it/framester2/sparql")
 
+        score = {}
         #init
-        score = {#"text": data["song"][verse]["text"], 
+        if withText:
+            score = {
                 "id": data["song"][verse]["id"], 
+                "text": data["song"][verse]["text"],
                 "angryscore": 0, "amusedscore": 0, "annoyedscore": 0, "dontcarescore": 0, "happyscore": 0, "inspiredscore": 0, "sadscore": 0}
-
+        else:
+            score = { 
+                "id": data["song"][verse]["id"], 
+                "angryscore": 0, "amusedscore": 0, "annoyedscore": 0, "dontcarescore": 0, "happyscore": 0, 
+                "inspiredscore": 0, "sadscore": 0}
+            
         #repeat the query for every filter
         for i in data["song"][verse]["synset"]:
 
@@ -167,8 +175,8 @@ def sparql_query():
                 continue
 
         if checkValues(score):
-            finalResults["scores"].append(score)
-            percentage(score)
+            percentageScores = percentage(score)
+            finalResults["scores"].append(percentageScores)            
 
 
     print(finalResults)

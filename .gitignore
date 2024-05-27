@@ -1,8 +1,11 @@
 
 out.nq
+output.txt
 
 code/__pycache__
 code/out.csv
+code/synScraperOutput.json
+
 
 #Tool del prof
 machine-reading/
@@ -17,3 +20,7 @@ machine-reading
 
 /*.swp
 *.swp
+out.csv
+synScraperOutput.json
+*.csv
+synScraperOutput.json

@@ -90,8 +90,8 @@ def createDict(allTextCsv: list, verses: list, synsets: list):
     return sortedDict
 
 
-def createJson(songDict: dict):
-    finalObject = {"song": songDict} #TODO da aggiungere author e title
+def createJson(songDict: dict, author: str, songTitleClean:str):
+    finalObject = {"song": songDict, "author": author, "title": songTitleClean}
     filename = "synScraperOutput.json"
 
     # save the final object to a separate JSON file
@@ -100,8 +100,8 @@ def createJson(songDict: dict):
 
     print(f"JSON object saved to {filename}")
 
+def synScraper(rdfFile, author, songTitle):
 
-def synScraper(rdfFile):
     nqFile = open(rdfFile, "r")
     quadruple = nqFile.readlines()
     
@@ -124,7 +124,9 @@ def synScraper(rdfFile):
 
     allTextCsv = extractTextCsv() # list of lyrics by verse
     songDict = createDict(allTextCsv, verses, synsets)
-    createJson(songDict)
+
+    songTitleClean = songTitle.replace("_", " ")
+    createJson(songDict, author, songTitleClean)
 
 
     nqFile.close()

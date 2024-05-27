@@ -1,4 +1,24 @@
 # PROGETTO INFORMATICA UMANISTICA
+
+## Prompt ChatGPT
+Giulia e Simone
+```
+Assume the following emotion categories:
+angry, amused, annoyed, don't care, happy, inspired and sad.
+Associate each verse of the song “”Lying from You” by Linkin Park with one or more categories. Return for each verse a table with every emotion category and its percentage in that verse.
+```
+Aldo
+```
+Assuming the following emotion categories (as described in the theory by Ekman), associate each sentence of the following text with one or more categories.
+```
+
+## Query SPARQL
+In /code runnare:
+```
+python3 sparql_query.py
+```
+nota: serve un file synScraperOutput.json popolato
+
 ## Output desiderato
 ```
 {
@@ -24,10 +44,10 @@ Da runnare nella cartella code e dopo aver eseguito lo script di Popi
 
 ### Testing
 
-Per testare lo script che ti restituisce il grafo rdf 
+Per testare l'intera pipeline runnare il file main.py
 
 ```
-sh rdf.sh "Nome autore" "Nome canzone"
+python3 main.py "Nome canzone" "Nome autore"
 ```
 
 L'output sarà nel file out.nq

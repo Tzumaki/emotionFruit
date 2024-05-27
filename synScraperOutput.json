@@ -1,0 +1,73 @@
+{
+  "song": [
+    {
+      "synset": [
+        "synset-here-adverb-1"
+      ],
+      "id": 0,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\""
+    },
+    {
+      "synset": [
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-year-noun-1",
+        "synset-here-adverb-1",
+        "synset-lone-adjectivesatellite-2",
+        "synset-darling-noun-1"
+      ],
+      "id": 1,
+      "text": "Little darling It's been a long cold lonely winter Little darling It feels like years since it's been here"
+    },
+    {
+      "synset": [
+        "synset-here-adverb-1"
+      ],
+      "id": 2,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\""
+    },
+    {
+      "synset": [
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-face-noun-1",
+        "synset-darling-noun-1",
+        "synset-year-noun-1",
+        "synset-here-adverb-1"
+      ],
+      "id": 3,
+      "text": "Little darling The smile's returning to the faces Little darling It seems like years since it's been here"
+    },
+    {
+      "synset": [
+        "synset-here-adverb-1"
+      ],
+      "id": 4,
+      "text": " Here comes the sun Here comes the sun And I say \"It's alright\""
+    },
+    {
+      "synset": [
+        "synset-here-adverb-1"
+      ],
+      "id": 5,
+      "text": "Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes"
+    },
+    {
+      "synset": [
+        "synset-year-noun-1",
+        "synset-darling-noun-1",
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-ice-noun-5"
+      ],
+      "id": 6,
+      "text": "Little darling I feel that ice is slowly melting Little darling It seems like years since it's been clear"
+    },
+    {
+      "synset": [
+        "synset-here-adverb-1"
+      ],
+      "id": 7,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\" Here comes the sun (Doo-d-doo-doo) Here comes the sun It's alright It's alright"
+    }
+  ],
+  "author": "The Beatles",
+  "title": "Here Comes the Sun"
+}

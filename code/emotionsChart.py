@@ -38,7 +38,10 @@ def drawCharts(data, author, song):
         listOfEmotions = list(data["scores"][i].items()) # get the scores and the id
         id = listOfEmotions[0]
         id = id[1]
-        listOfEmotions = listOfEmotions[1:]
+        if listOfEmotions[1][0] == "text":
+            listOfEmotions = listOfEmotions[2:]
+        else:
+            listOfEmotions = listOfEmotions[1:]
 
         counter = 0
         for tup in listOfEmotions: # get a list of values for each emotions

@@ -2,91 +2,72 @@
   "song": [
     {
       "synset": [
-        "synset-family-noun-1",
-        "synset-gold-adjectivesatellite-1"
+        "synset-here-adverb-1"
       ],
-      "id": 0
+      "id": 0,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\""
     },
     {
       "synset": [
-        "synset-then-adverb-1"
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-year-noun-1",
+        "synset-here-adverb-1",
+        "synset-lone-adjectivesatellite-2",
+        "synset-darling-noun-1"
       ],
-      "id": 1
+      "id": 1,
+      "text": "Little darling It's been a long cold lonely winter Little darling It feels like years since it's been here"
     },
     {
       "synset": [
-        "synset-thing-noun-7",
-        "synset-handwriting-noun-1",
-        "synset-flower-noun-2",
-        "synset-name-noun-3",
-        "synset-Sand-noun-2",
-        "synset-hour-noun-1"
+        "synset-here-adverb-1"
       ],
-      "id": 2
+      "id": 2,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\""
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-face-noun-1",
+        "synset-darling-noun-1",
+        "synset-year-noun-1",
+        "synset-here-adverb-1"
       ],
-      "id": 3
+      "id": 3,
+      "text": "Little darling The smile's returning to the faces Little darling It seems like years since it's been here"
     },
     {
       "synset": [
-        "synset-compunction-noun-1",
-        "synset-word-noun-2",
-        "synset-nail-noun-2",
-        "synset-rose-noun-1"
+        "synset-here-adverb-1"
       ],
-      "id": 4
+      "id": 4,
+      "text": " Here comes the sun Here comes the sun And I say \"It's alright\""
     },
     {
       "synset": [
-        "synset-baby-noun-1",
-        "synset-then-adverb-1"
+        "synset-here-adverb-1"
       ],
-      "id": 5
+      "id": 5,
+      "text": "Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes Sun sun sun here it comes"
     },
     {
       "synset": [
-        "synset-name-noun-3",
-        "synset-hour-noun-2",
-        "synset-flower-noun-2",
-        "synset-Sand-noun-2",
-        "synset-handwriting-noun-1",
-        "synset-thing-noun-7"
+        "synset-year-noun-1",
+        "synset-darling-noun-1",
+        "synset-fiddling-adjectivesatellite-1",
+        "synset-ice-noun-5"
       ],
-      "id": 6
+      "id": 6,
+      "text": "Little darling I feel that ice is slowly melting Little darling It seems like years since it's been clear"
     },
     {
       "synset": [
-        "synset-baby-noun-1"
+        "synset-here-adverb-1"
       ],
-      "id": 7
-    },
-    {
-      "synset": [
-        "synset-then-adverb-1"
-      ],
-      "id": 8
-    },
-    {
-      "synset": [
-        "synset-hour-noun-1",
-        "synset-Sand-noun-2",
-        "synset-name-noun-3",
-        "synset-thing-noun-7",
-        "synset-flower-noun-3",
-        "synset-handwriting-noun-1"
-      ],
-      "id": 9
-    },
-    {
-      "synset": [
-        "synset-baby-noun-1"
-      ],
-      "id": 10
+      "id": 7,
+      "text": " Here comes the sun (Doo-d-doo-doo) Here comes the sun And I say \"It's alright\" Here comes the sun (Doo-d-doo-doo) Here comes the sun It's alright It's alright"
     }
   ],
-  "author": "stocazzo",
-  "title": "stocazzo"
+  "author": "The Beatles",
+  "title": "Here Comes the Sun"
 }

@@ -10,7 +10,32 @@ Associate each verse of the song “”Lying from You” by Linkin Park with one
 Aldo
 ```
 Assuming the following emotion categories (as described in the theory by Ekman), associate each sentence of the following text with one or more categories.
+```  
+
+### Prompt finale
+  
+Pretend to be an expert in emotions and return a table with the percentage of the most present emotions among anger, amusement, annoyance, indifference, happiness, inspiration, and sadness in each verse of (song title) by (author).
+The output should be a JSON in this format:
+```json
+{
+  "scores": [
+    {
+      "id": "number",
+      "angryscore": "value of anger",
+      "amusedscore": "value of amusement",
+      "annoyedscore": "value of annoyance",
+      "dontcarescore": "value of indifference",
+      "happyscore": "value of happiness",
+      "inspiredscore": "value of inspiration",
+      "sadscore": "value of sadness"
+    }
+  ]
+}
 ```
+for each verse (number), start from zero. the value of scores must be integer, not strings
+ 
+
+
 
 ## Query SPARQL
 In /code runnare:

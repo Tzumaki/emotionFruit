@@ -77,6 +77,10 @@ python3 main.py "Nome canzone" "Nome autore"
 
 L'output sarà nel file out.nq
 
+### Grafici da Json
+```
+python3 main.py -e  path_del_json "Autore" "Titolo"
+```
 
 ### Email professore
 

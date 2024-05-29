@@ -1,0 +1,14 @@
+azapi==3.0.8
+Flask==2.2.2
+fredclient==1.0.0
+iPOPO==1.0.1
+lyricsgenius==3.0.1
+matplotlib==3.8.4
+numpy==1.26.4
+pandas==1.5.2
+rdflib==6.2.0
+Requests==2.32.2
+setuptools==52.0.0
+shortuuid==1.0.13
+SPARQLWrapper==2.0.0
+SPARQLWrapper==2.0.0

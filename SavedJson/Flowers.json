@@ -1,0 +1,54 @@
+{
+  "scores": [
+    {
+      "id": 0,
+      "angryscore": 10,
+      "amusedscore": 5,
+      "annoyedscore": 15,
+      "dontcarescore": 20,
+      "happyscore": 25,
+      "inspiredscore": 10,
+      "sadscore": 15
+    },
+    {
+      "id": 1,
+      "angryscore": 5,
+      "amusedscore": 10,
+      "annoyedscore": 10,
+      "dontcarescore": 20,
+      "happyscore": 30,
+      "inspiredscore": 15,
+      "sadscore": 10
+    },
+    {
+      "id": 2,
+      "angryscore": 8,
+      "amusedscore": 12,
+      "annoyedscore": 10,
+      "dontcarescore": 25,
+      "happyscore": 20,
+      "inspiredscore": 15,
+      "sadscore": 10
+    },
+    {
+      "id": 3,
+      "angryscore": 10,
+      "amusedscore": 15,
+      "annoyedscore": 5,
+      "dontcarescore": 20,
+      "happyscore": 25,
+      "inspiredscore": 15,
+      "sadscore": 10
+    },
+    {
+      "id": 4,
+      "angryscore": 15,
+      "amusedscore": 5,
+      "annoyedscore": 10,
+      "dontcarescore": 10,
+      "happyscore": 30,
+      "inspiredscore": 10,
+      "sadscore": 20
+    }
+  ]
+}

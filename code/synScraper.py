@@ -4,7 +4,7 @@ import json
 import csv
 
 
-def countSynsets(quadruple: list):
+def countSynsets(quadruple: list): # collect all synSet in the nq file
     countSynWord = 0
     synsetLines = []
 
@@ -31,7 +31,7 @@ def regexSubject(todoRegex: list):
     return filteredWords   
 
 
-def filterSynset(synsetLines: list):
+def filterSynset(synsetLines: list): # select synSet only if it's an object in the nq file
     outputWords = [] # numVerse
     todoRegex = [] # subjWithNumVerse
     synsetDis = [] # objWithSynset
@@ -76,14 +76,8 @@ def extractTextCsv():
 def createDict(allTextCsv: list, verses: list, synsets: list, checkCSV: bool):
     songDictionary = {} # create json file using the following dictionary
 
-    i = 0
-    j = 0
-    print("lunghezza lista testo csv", len(allTextCsv)) # should be 9 for justin
-
     for verse, synset in zip(verses, synsets): # iterate over the lists
         intVerse = int(verse[0]) # convert id to integer
-
-        print("intVerseee-> ID:", intVerse)
         
         if intVerse in songDictionary: # se id nel dict -> append
             songDictionary[intVerse]["synset"].append(synset)
@@ -94,18 +88,17 @@ def createDict(allTextCsv: list, verses: list, synsets: list, checkCSV: bool):
                     "id": intVerse
                 }
             else: # json with csv
-                i += 1
                 songDictionary[intVerse] = {
                     "synset": [synset],
                     "id": intVerse,
-                    "text": allTextCsv[intVerse] # se il csv comincia con strofa 1 dovrebbe essere -> allTextCsv[intVerse-1]
+                    "text": allTextCsv[intVerse]
                 }
 
     sortedDict = sorted(songDictionary.values(), key=lambda x: x["id"]) # sort the verses by id
     return sortedDict
 
 
-def createJson(songDict: dict, author: str, songTitleClean:str):
+def createJson(songDict: dict, author: str, songTitleClean: str):
     finalObject = {"song": songDict, "author": author, "title": songTitleClean}
     filename = "synScraperOutput.json"
 
@@ -114,6 +107,8 @@ def createJson(songDict: dict, author: str, songTitleClean:str):
         json.dump(finalObject, jsonFile, indent=2)
 
     print(f"JSON object saved to {filename}")
+    print("--------------------------------")
+
 
 def synScraper(rdfFile, author, songTitle, checkCSV):
 
@@ -129,7 +124,6 @@ def synScraper(rdfFile, author, songTitle, checkCSV):
 
     synsetLines = countSynsets(quadruple)
     verseAndSynsets = filterSynset(synsetLines)   # list of: list of verses AND list of synsets
-    print("----------------------")
     verses = verseAndSynsets[0]
     synsets = verseAndSynsets[1]
 
@@ -140,9 +134,7 @@ def synScraper(rdfFile, author, songTitle, checkCSV):
 
     if(checkCSV):
         allTextCsv = extractTextCsv() # list of lyrics by verse
-    
     songDict = createDict(allTextCsv, verses, synsets, checkCSV)
-
     songTitleClean = songTitle.replace("_", " ")
     createJson(songDict, author, songTitleClean)
 

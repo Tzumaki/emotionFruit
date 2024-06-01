@@ -32,6 +32,12 @@ python3 main.py -e path/to/json "Autore" "Titolo"
 ```
 È possibile trovare dei file .nq già salvati nella cartella SavedJson
 
+## Grafici a partire da output di ChatGPT
+```
+./emFromGPT.sh 
+```
+Inserire autore, titolo della canzone e output di chatgpt in formato json
+
 ## Prompt ChatGPT 
 
 ### Con Testo

@@ -1,0 +1,104 @@
+{
+  "scores": [
+    {
+      "id": 0,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 100,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 0
+    },
+    {
+      "id": 1,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 20,
+      "dontcarescore": 60,
+      "happyscore": 10,
+      "inspiredscore": 0,
+      "sadscore": 10
+    },
+    {
+      "id": 2,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 60,
+      "dontcarescore": 40,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 0
+    },
+    {
+      "id": 3,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 40,
+      "happyscore": 20,
+      "inspiredscore": 40,
+      "sadscore": 0
+    },
+    {
+      "id": 4,
+      "angryscore": 20,
+      "amusedscore": 0,
+      "annoyedscore": 40,
+      "dontcarescore": 40,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 0
+    },
+    {
+      "id": 5,
+      "angryscore": 20,
+      "amusedscore": 0,
+      "annoyedscore": 40,
+      "dontcarescore": 30,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 10
+    },
+    {
+      "id": 6,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 50,
+      "happyscore": 30,
+      "inspiredscore": 20,
+      "sadscore": 0
+    },
+    {
+      "id": 7,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 40,
+      "dontcarescore": 20,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 40
+    },
+    {
+      "id": 8,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 100,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 0
+    },
+    {
+      "id": 9,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 20,
+      "happyscore": 50,
+      "inspiredscore": 0,
+      "sadscore": 30
+    }
+  ]
+}

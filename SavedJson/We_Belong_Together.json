@@ -1,0 +1,94 @@
+{
+    "scores": [
+        {
+            "id": 0,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 100,
+            "happyscore": 0,
+            "inspiredscore": 0,
+            "sadscore": 0
+        },
+        {
+            "id": 1,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 10,
+            "dontcarescore": 30,
+            "happyscore": 10,
+            "inspiredscore": 20,
+            "sadscore": 30
+        },
+        {
+            "id": 2,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 70,
+            "happyscore": 10,
+            "inspiredscore": 10,
+            "sadscore": 10
+        },
+        {
+            "id": 3,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 20,
+            "happyscore": 40,
+            "inspiredscore": 10,
+            "sadscore": 30
+        },
+        {
+            "id": 4,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 10,
+            "dontcarescore": 60,
+            "happyscore": 10,
+            "inspiredscore": 10,
+            "sadscore": 10
+        },
+        {
+            "id": 5,
+            "angryscore": 20,
+            "amusedscore": 0,
+            "annoyedscore": 20,
+            "dontcarescore": 20,
+            "happyscore": 0,
+            "inspiredscore": 20,
+            "sadscore": 20
+        },
+        {
+            "id": 6,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 40,
+            "happyscore": 40,
+            "inspiredscore": 0,
+            "sadscore": 20
+        },
+        {
+            "id": 7,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 40,
+            "happyscore": 10,
+            "inspiredscore": 0,
+            "sadscore": 50
+        },
+        {
+            "id": 8,
+            "angryscore": 0,
+            "amusedscore": 0,
+            "annoyedscore": 0,
+            "dontcarescore": 100,
+            "happyscore": 0,
+            "inspiredscore": 0,
+            "sadscore": 0
+        }
+    ]
+}

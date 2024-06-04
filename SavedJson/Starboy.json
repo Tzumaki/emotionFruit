@@ -1,0 +1,104 @@
+{
+  "scores": [
+    {
+      "id": 0,
+      "angryscore": 0,
+      "amusedscore": 0,
+      "annoyedscore": 0,
+      "dontcarescore": 100,
+      "happyscore": 0,
+      "inspiredscore": 0,
+      "sadscore": 0
+    },
+    {
+      "id": 1,
+      "angryscore": 20,
+      "amusedscore": 10,
+      "annoyedscore": 30,
+      "dontcarescore": 10,
+      "happyscore": 10,
+      "inspiredscore": 20,
+      "sadscore": 0
+    },
+    {
+      "id": 2,
+      "angryscore": 10,
+      "amusedscore": 10,
+      "annoyedscore": 10,
+      "dontcarescore": 10,
+      "happyscore": 20,
+      "inspiredscore": 30,
+      "sadscore": 10
+    },
+    {
+      "id": 3,
+      "angryscore": 0,
+      "amusedscore": 30,
+      "annoyedscore": 0,
+      "dontcarescore": 10,
+      "happyscore": 30,
+      "inspiredscore": 30,
+      "sadscore": 0
+    },
+    {
+      "id": 4,
+      "angryscore": 20,
+      "amusedscore": 10,
+      "annoyedscore": 20,
+      "dontcarescore": 10,
+      "happyscore": 10,
+      "inspiredscore": 30,
+      "sadscore": 0
+    },
+    {
+      "id": 5,
+      "angryscore": 10,
+      "amusedscore": 10,
+      "annoyedscore": 10,
+      "dontcarescore": 10,
+      "happyscore": 20,
+      "inspiredscore": 30,
+      "sadscore": 10
+    },
+    {
+      "id": 6,
+      "angryscore": 0,
+      "amusedscore": 30,
+      "annoyedscore": 0,
+      "dontcarescore": 10,
+      "happyscore": 30,
+      "inspiredscore": 30,
+      "sadscore": 0
+    },
+    {
+      "id": 7,
+      "angryscore": 10,
+      "amusedscore": 20,
+      "annoyedscore": 10,
+      "dontcarescore": 10,
+      "happyscore": 30,
+      "inspiredscore": 20,
+      "sadscore": 0
+    },
+    {
+      "id": 8,
+      "angryscore": 10,
+      "amusedscore": 10,
+      "annoyedscore": 10,
+      "dontcarescore": 10,
+      "happyscore": 20,
+      "inspiredscore": 30,
+      "sadscore": 10
+    },
+    {
+      "id": 9,
+      "angryscore": 0,
+      "amusedscore": 30,
+      "annoyedscore": 0,
+      "dontcarescore": 10,
+      "happyscore": 30,
+      "inspiredscore": 30,
+      "sadscore": 0
+    }
+  ]
+}

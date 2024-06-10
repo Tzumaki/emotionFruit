@@ -24,13 +24,13 @@ python3 main.py "Autore" "Titolo"
 ```
 python3 main.py -f path/to/nq "Autore" "Titolo"
 ```
-È possibile trovare dei file .nq già salvati nelle cartelle SavedSongs ed extraMaterial
+È possibile trovare dei file .nq già salvati nelle cartelle savedStuff/savedNq ed extraMaterial
 
 ## Grafici a partire da JSON
 ```
 python3 main.py -e path/to/json "Autore" "Titolo"
 ```
-È possibile trovare dei file .json già salvati nelle cartelle SavedChatGPT ed extraMaterial
+È possibile trovare dei file .json già salvati nelle cartelle savedStuff/savedChatGPT ed extraMaterial
 
 ## Grafici a partire da output di ChatGPT
 ```

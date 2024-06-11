@@ -1,6 +1,5 @@
 azapi==3.0.8
 Flask==2.2.2
-fredclient==1.0.0
 iPOPO==1.0.1
 lyricsgenius==3.0.1
 matplotlib==3.8.4

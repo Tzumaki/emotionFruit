@@ -19,6 +19,7 @@ pip install -r requirements.txt
 ```
 python3 main.py "Autore" "Titolo"
 ```
+Il file .nq verrà salvato nella directory /SavedSongs
 
 ## Pipeline a partire da un file .nq
 ```

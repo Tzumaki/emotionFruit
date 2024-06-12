@@ -13,6 +13,8 @@ def parseText(Lyrics):
 def createCSV(author,song):
     dict = {'corpus_id':[],'document_id':[],'sentence_id':[],'content':[]}
     songObject = getSong(author,song)
+    if songObject == {}:
+        exit("Song not found")
     arrayStrofe = []
     indice = 0
     for i,strofa in enumerate(parseText(songObject["lyrics"])):

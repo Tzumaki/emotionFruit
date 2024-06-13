@@ -20,6 +20,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
+    if not os.path.exists(os.path.join(os.getcwd(),"SavedSongs")): #check if the dir exists, create if not 
+        os.mkdir("SavedSongs")
+
     author = args.Author
     songTitle = args.Title
 
